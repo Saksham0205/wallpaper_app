@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:wallpaper_app/fullscreen.dart';
+=======
+import 'package:flutter/material.dart';
+>>>>>>> origin/master
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -12,6 +16,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+<<<<<<< HEAD
   @override
   void initState() {
     // TODO: implement initState
@@ -62,11 +67,23 @@ class _HomePageState extends State<HomePage> {
           style: TextStyle(
             color: Colors.black,
           ),
+=======
+  String api= "AsHJPEVykI1vFwH70U4BWV6CFrxvMFzTmnp5hNRLRMtYZaKlh2yurm1A";
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar:AppBar(
+        title: Text(
+          "Wallpapers", style: TextStyle(
+          color: Colors.black,
+        ),
+>>>>>>> origin/master
         ),
         centerTitle: true,
       ),
       body: Column(
         children: [
+<<<<<<< HEAD
           Expanded(
             child: GridView.builder(
               itemCount: images.length,
@@ -107,6 +124,24 @@ class _HomePageState extends State<HomePage> {
                   "Load More",
                   style: TextStyle(color: Colors.white, fontSize: 24),
                 ),
+=======
+          Expanded(child: Container(
+            child: GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3,crossAxisSpacing: 2,childAspectRatio: 2/3,mainAxisSpacing: 2), itemBuilder: (context,index){
+              return Container(
+                color: Colors.black,
+              );
+            }),
+
+          ),),
+          Container(
+            width: double.infinity,
+            color: Colors.black,
+            child: Center(
+              child: Text(
+                "Load More",
+                style: TextStyle(
+                    color: Colors.white,fontSize: 24),
+>>>>>>> origin/master
               ),
             ),
           ),
